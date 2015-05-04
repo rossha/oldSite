@@ -44,6 +44,27 @@ body {
   background-color:#fff092;
 }
 
+.form {
+  width:100%;
+  color:black;
+  text-align:left;
+}
+
+.formHead {
+  padding-top:20px;
+  padding-bottom:20px;
+  padding-left:3%;
+  color:#cdcdcd;
+  font-size:25px;
+  font-weight:bold;
+}
+
+.formContent {
+  color:#cdcdcd;
+  padding-top:30px;
+  padding-bottom:40px;
+}
+
 @media screen and (max-width:500px){
   .circle {
     max-width:60%;
