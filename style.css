@@ -26,16 +26,6 @@ body {
   background-size: cover;
 }
 
-.right {
-  width:50%;
-  float:right;
-}
-
-.left {
-  width:50%;
-  clear:left;
-}
-
 .circle {
   border-radius: 50%;
   display: inline-block;
