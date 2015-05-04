@@ -44,6 +44,13 @@ body {
   background-color:#fff092;
 }
 
+.container {
+  width:80%;
+  left:10%;
+  margin-bottom: 65px;
+  position:relative;
+}
+
 .form {
   width:100%;
   color:black;
@@ -63,6 +70,12 @@ body {
   color:#cdcdcd;
   padding-top:30px;
   padding-bottom:40px;
+}
+
+.right, .left, .middle {
+  width:33%;
+  float:left;
+  display:inline-block;
 }
 
 @media screen and (max-width:500px){
