@@ -1,57 +1,174 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[Title]</title>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
 
+        $(".head").click(function () {
+          $header = $(this);
+          //getting the next element
+          $content = $header.next();
+          //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+          $content.slideToggle(500, function () {
+              //execute this after slideToggle is done
+              //change direction of glyphicon
+              $header.find('span').toggleClass('glyphicon-triangle-right glyphicon-triangle-bottom');
+          });
+        });
+
+      });
+
+  </script>
+  <style type="text/css">
+    .content{display:none;}
+  </style>
   </head>
   <body>
     <div class="row">
-      <div id="top">
-        <img src="images/name-logo.png" class="circle" />
+      <div>
+        <img src="images/name-logo.png" class="circle" data-top="opacity:1" data-40-top-bottom="opacity:0" class="wrapper clearfix" />
         <!-- Image in a circular frame, maybe faded text with a logo if you're gettin' craz
            (Ideas: PCT picture, tent picture, picture from traveling)-->      
       </div>
     </div>
     <div class="row-break"></div>
-    <div class="row container">
-      <div class="left">
-        <div class="head">
-          <div><span class="glyphicon glyphicon-triangle-right"></span>EDUCATION</div>
-          <!-- Education (Wash U, Major/Minor yadda yadda)-->
+    <div id="top">
+      <div class="container">
+        <div class="section">
+          <div class="head">
+            <div><span class="glyphicon glyphicon-triangle-right"></span><img src="images/education.png" class="fieldname" /></div>
+          </div>
+          <div class="content">
+            <div class="contentBox">
+              <img id="wustl" src="images/wustl.jpeg">
+              <h3><em>WASHINGTON UNIVERSITY IN SAINT LOUIS</em></h3><br/>
+            </div>
+            <p>Bachelor of Arts and Sciences</p>
+            <hr/>
+            <p>MAJOR: Environmental Biology</p>
+            <p>MINOR: Public Health</p>
+            <p>GPA 3.5/4.0
+            <hr/>
+            <p>Teaching Assistant, Introduction to Environmental Biology (Spring 2013)</p>
+          </div>
         </div>
-        <div class="content">
+        <div class="section">
+          <div class="head">
+            <div><span class="glyphicon glyphicon-triangle-right"></span><img src="images/workExperience.png" class="fieldname" /></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>FUSION MARKETING<br/>
+                  Junior Web Developer<br/><hr/>
+                <ul>
+                  <li>Develop and maintain web applications and websites for companies such as Goose Island Brewing Company and Purina.<br/><br/>
+                  Update existing Android and iOS applications to function within new SDK versions
+                  </li>
+                </ul>
+              </li>
+              <li>ARTSCI COMPUTING<br/>
+                  Assistant Manager, Creative Lab<br/><hr/>
+                <ul>
+                  <li>Organized and led lab consultant trainings.<br/><br/>
+                    Addressed technological issues within the lab and acted as liaison between students, faculty, and departmental specialists.<br/><br/>
+                    Maintained and updated film and media library and corresponding online library database.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="middle">
-        <div class="head">
-          <div><span class="glyphicon glyphicon-triangle-right"></span>WORK EXPERIENCE</div>
-        </div>
-        <div class="content">
-          <ul>
-            <li>Fusion Marketing, Junior Web Developer
-              <ul>
-                <li></li>
-              </ul>
-            </li>
-          </ul>
-          <!-- Work Experience 
-                -Fusion Marketing
-                  -LaunchCode
-                  -Examples of work, or what companies/websites you work for? (Mention of clients allowed?)
-                -YMCA -->
-        </div>
-      </div>
-      <div class="right">
-        <div class="head">
-          <div><span class="glyphicon glyphicon-triangle-right"></span>TECHNICAL SKILLS</div>
-        </div>
-        <div class="content">
+        <div class="section">
+          <div class="head">
+            <div><span class="glyphicon glyphicon-triangle-right"></span><img src="images/techSkills.png" class="fieldname" /></div>
+          </div>
+          <div class="content">
+            <ul>
+              <li>DEVELOPMENT WORK<br/><hr/>
+                <ul class="list">
+                  <em>Strong</em>
+                  <li>HTML/CSS</li>
+                  <li>JavaScript and JS libraries (including NodeJS, AngularJS, jQuery, Firebase, and Bootstrap)</li>
+                  <li>mySQL</li>
+                  <br/>
+                  <em>Learning</em>
+                  <li>PHP/WordPress</li>
+                  <li>Android and iOS SDK</li>
+                </ul>
+              </li>
+              <li>WEB DESIGN<br/><hr/>
+                <ul class="list">
+                  <li>Abobe Photoshop & Illustrator</li>
+                  <li>Parallax Web Animation (Skrollr)</li>
+                </ul>    
+              </li>
+              <li>RECENT PROJECT<br/><hr/>
+                <ul class="list">
+                  <li class="paragraph">EVENT ORGANIZING APPLICATION: I built a web application that allows coordinators for large events to keep track of their guests in real-time. The full guest manifest for each event is loaded into the program and can be sorted by guest name, arrival time, flight number, or hotel assignment. Every guest has an individual profile where more detailed information can be found. I built a QR-code generator and scanner that would create and email a QR-code to each guest before the event. These QR codes can be scanned directly from the application using the native camera functionality of the device, allowing event coordinators to easily scan guests onto a specific bus or into a specific location. This, in turn, updates the status of that guest in realtime for all other event coordinators using the application. The project was built using Angular and Firebase, which allowed instantaneous updating of information while multiple users were operating the application. It was a blast to build!
+                  </li>
+                </ul>
+              </li>
+          </div>
         </div>
       </div>
     </div>
-    <div>
+    <div class="row-break"></div>
+
+<!--     <div class="row-break mid"></div>
+      <div id="two">
+      </div>
+    <div class="row-break bottom"></div> -->
+
+    <div class="row-break mid"></div>
+    <div id="three">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <img src="images/hike.jpg" alt="...">
+          </div>
+          <div class="item">
+            <img src="images/tldr.jpg" alt="...">
+          </div>
+          <div class="item">
+            <img src="images/whitneyHike.jpg" alt="Climbing Mount Whitney">
+          </div>
+          <div class="item">
+            <img src="images/whitneyTop.jpg" alt="Top of Mount Whitney">
+          </div>
+          <div class="item">
+            <img src="images/pass.jpg">
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <div class="row-break bottom"></div>
     <div class="row">
       <div class="left square">
         <!-- Leadership (CoderGirl, Speaker for Catalysts for Change?, WP)-->
@@ -88,5 +205,13 @@
         <!-- Contact info / Good Quote / LinkedIn? (ew.) -->
       </div>
     </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js"></script>
+    <script type="text/javascript">
+      var s = skrollr.init({
+        render: function(data) {
+          
+        }
+      });
+    </script>
   </body>
 </html>

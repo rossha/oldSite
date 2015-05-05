@@ -1,0 +1,267 @@
+/* STYLES */
+
+body {
+  width:100%;
+  height:100%;
+  padding:0;
+  margin:0;
+  background:url(../images/wood.jpg) no-repeat center top fixed;
+  background-size:100%;
+}
+
+.row {
+  width:100%;
+  margin:0;
+}
+
+.row-break {
+  clear:both;
+  width:100%;
+  background-color:#2f1c0d;
+  height:13px;
+}
+
+#top {
+  width:100%;
+  padding-top:30px;
+  background:url(../images/background.JPG) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mid {
+  margin-top:70px;
+}
+
+#blurb {
+  max-width:50%;
+  display:inline-block;
+}
+/*
+#two {
+
+}*/
+
+#three {
+  padding:3% 10%;
+  background:url(../images/hike.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bottom {
+  margin-bottom:100px;
+}
+
+#intro {
+  height:100px;
+  width:60%;
+  margin-left:20%;
+  border-radius: 25px;
+  color:white;
+  text-align:center;
+}
+
+.carousel {
+  width:40%;
+  height:auto;
+  color:black;
+  border:7px #2f1c0d solid;
+  margin-left:60%
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  max-width:16%;
+  margin-left:42%;
+  margin-top:4%;
+  margin-bottom:4%;
+  border:white solid 3px;
+}
+
+.orange {
+  background-color: #f3bd36;
+}
+
+.yellow {
+  background-color:#fff092;
+}
+
+.container {
+  width:88%;
+/*  left:6%;*/
+  padding-bottom: 65px;
+  padding-top:30px;
+  position:relative;
+}
+/*
+.form {
+  width:100%;
+  color:black;
+  text-align:left;
+}*/
+
+.head {
+  padding-top:20px;
+  padding-bottom:20px;
+  color:#2f1c0d;
+  font-size:16px;
+  font-weight:bold;
+  background-color: #f3bd36;
+}
+
+.head:hover {
+  background-color:rgba(243,189,54,0.7);
+}
+
+.content {
+  /*background-color:#2f1c0d;*/
+  background-color:rgba(47,28,13,0.6);
+  color:white;
+  font-weight:bold;
+  font-size:15px;
+  padding-bottom:15px;
+/*  border-color:#f3d17c;*/
+/*  background-color:rgba(243,189,54,0.6);*/
+}
+
+h3 {
+  margin:0;
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+  vertical-align:middle;
+  display:inline-block;
+  width:68%;
+  padding-right:15px;
+}
+
+#wustl {
+  max-width:30%;
+  display:inline-block;
+  clear:left;
+  padding:20px 13px;
+}
+
+p {
+  text-align:center;
+}
+
+hr {
+  border:0 none;
+  height: 1px;
+  background-color:white;
+  color:#2f1c0d;
+  width:90%;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+
+ul {
+  padding:10px;
+  padding-top:20px;
+}
+
+ul li {
+  list-style-type:none;
+  text-align:left;
+  margin-bottom:35px;
+  width:90%;
+  margin-left:5%;
+}
+
+ul li:last-of-type {
+  margin-bottom:0px;
+}
+
+ul li ul {
+  padding:0;
+}
+
+.section {
+  width:32%;
+  float:left;
+  display:inline-block;
+  margin-left:2%;
+}
+
+.section:first-of-type {
+  margin-left:0%;
+}
+
+.glyphicon {
+  margin-right:3%;
+  margin-left:6%;
+}
+
+.fieldname {
+  height:30px;
+}
+
+em {
+  text-shadow:1px 1px #f3bd36;
+  color:white;
+}
+
+ul.list li {
+  margin:0;
+  padding:0;
+}
+
+.paragraph {
+  margin-top:5px;
+  text-align:left;
+  padding-left:1px;
+  width:98%;
+}
+
+@media screen and (max-width:825px){
+  .circle {
+    max-width:30%;
+    margin:10%;
+    margin-left:35%;
+  }
+
+  #wustl {
+    width:20%;
+    display:block;
+    clear:both;
+    margin-left:40%;
+  }
+
+ h3 {
+    width:100%;
+    text-align:middle;
+  }
+
+  .section {
+    width:100%;
+    margin:0;
+    margin-bottom:15px;
+  }
+
+}
+
+@media screen and (max-width:500px){
+  
+  body {
+    background:url(../images/wood.jpg) no-repeat center top fixed;
+    background-size:100%;
+  }  
+
+  .circle {
+    max-width:40%;
+    margin:10% 30%;
+  }
+
+  .container {
+    left:0%;
+    padding:0;
+    width:100%;
+  }
+}
