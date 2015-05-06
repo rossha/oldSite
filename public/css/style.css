@@ -71,8 +71,7 @@ body {
   height:auto;
   color:black;
   border:7px #2f1c0d solid;
-  margin-left:9%;
-  display:inline-block;
+  margin-left:30%;
 }
 
 .circle {
@@ -223,12 +222,12 @@ ul.list li {
 
 .caption {
   font-size:22px;
-  width:50%;
+  width:60%;
   color:white;
   text-align:center;
-  margin:0;
-  display:inline-block;
-  padding-bottom:300px;
+  margin:auto;
+  display:block;
+  margin-bottom:15px;
 }
 
 @media screen and (max-width:825px){
