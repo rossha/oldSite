@@ -71,7 +71,7 @@ body {
   height:auto;
   color:black;
   border:7px #2f1c0d solid;
-  margin-left:20%
+  margin-left:10%
 }
 
 .circle {
@@ -222,6 +222,7 @@ ul.list li {
 
 .caption {
   font-size:22px;
+  max-width:20%;
   color:white;
   text-align:center;
   margin-left:10%;
