@@ -267,8 +267,9 @@ ul.list li {
 @media screen and (max-width:500px){
   
   body {
-    background:url(../images/wood.jpg) no-repeat center top fixed;
+    background:url(../images/wood.jpg) center top fixed;
     background-size:100%;
+    background-repeat:repeat-y;
   }  
 
   .circle {
