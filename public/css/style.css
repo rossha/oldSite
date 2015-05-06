@@ -71,7 +71,8 @@ body {
   height:auto;
   color:black;
   border:7px #2f1c0d solid;
-  margin-left:9%
+  margin-left:9%;
+  display:inline-block;
 }
 
 .circle {
@@ -225,6 +226,8 @@ ul.list li {
   width:50%;
   color:white;
   text-align:center;
+  margin:0;
+  display:inline-block;
 }
 
 @media screen and (max-width:825px){
